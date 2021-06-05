@@ -1,15 +1,18 @@
 @echo off
-title youtube-dl.exe
+title youtube-dl_textmode
 :home
 cls
-echo Enter URL :
-set /p url=
-"youtube-dl.exe" %url%
+set /p url="Enter the URL : "
+cls
+echo Wait for a moment
+youtube-dl.exe %url%
+echo DONE!
 pause
+goto Done
 :Done
 cls
 echo Done? (Y/N)
-set /p answer=
+set /p answer="> "
 if %answer%==Secret(goto Secret)
 if %answer%==secret(goto Secret)
 if %answer%==Y (exit)
