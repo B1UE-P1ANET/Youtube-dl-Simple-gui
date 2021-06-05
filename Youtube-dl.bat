@@ -11,8 +11,10 @@ pause
 cls
 echo Done? (Y/N)
 set /p answer=
-if %answer%==Y or y (exit)
-if %answer%==N or n (goto home)
+if %answer%==Y (exit)
+if %answer%==y (exit)
+if %answer%==N (goto home)
+if %answer%==n (goto home)
 pause
 :Secret
 cls
