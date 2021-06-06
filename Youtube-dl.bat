@@ -13,12 +13,12 @@ goto Done
 cls
 echo Done? (Y/N)
 set /p answer="> "
-if %answer%==Secret(goto Secret)
-if %answer%==secret(goto Secret)
-if %answer%==Y (exit)
-if %answer%==y (exit)
-if %answer%==N (goto home)
-if %answer%==n (goto home)
+if %answer%==Secret(goto Secret
+if %answer%==secret(goto Secret
+if %answer%==Y exit
+if %answer%==y exit
+if %answer%==N goto home
+if %answer%==n goto home
 pause
 :Secret
 cls
